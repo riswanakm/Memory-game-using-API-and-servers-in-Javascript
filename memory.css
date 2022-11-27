@@ -1,0 +1,324 @@
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  background-color: lightblue;
+ 
+  margin: 0 auto;
+  border: 3px solid blue;
+  padding: 0 2em 1em;
+  background: -moz-linear-gradient(-45deg, #2b5ec4 0%, #5c17b6 100%);
+  background: -webkit-linear-gradient(-45deg, #2b5ec4 0%, #5c17b6 100%);
+  background: -o-linear-gradient(-45deg, #2b5ec4 0%, #5c17b6 100%);
+  background: -ms-linear-gradient(-45deg, #2b5ec4 0%, #5c17b6 100%);
+  background: -webkit-linear-gradient(315deg, #2b5ec4 0%, #5c17b6 100%);
+  background: -o-linear-gradient(315deg, #2b5ec4 0%, #5c17b6 100%);
+  background: linear-gradient(135deg, #2b5ec4 0%, #5c17b6 100%);
+  color: #fff3;
+  min-height: 100vh;
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#2b5ec4', endColorstr='#5c17b6', GradientType=1);
+}
+
+h1 {
+  font-size: 150%;
+  color: blue;
+  margin-bottom: .5em;
+}
+
+label {
+  float: left;
+  width: 11em;
+}
+
+input,
+select {
+  width: 10em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+input[type=checkbox] {
+  width: 2em;
+}
+
+header p {
+  margin: 0 2em 1em 0;
+}
+
+#new_game,
+#player,
+#high_score,
+#correct {
+  float: left;
+  color: grey;
+}
+
+#cards {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left:20%;
+
+}
+
+#cards img {
+  height: 100px;
+  width: 100%;
+  padding-right: 5px;
+  padding-bottom: 3px;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.game {
+  width: 80%;
+  margin: auto;
+  padding: 1rem 2rem;
+  background: #ffffff59;
+  border-radius: 10px;
+}
+
+.ui-tabs .ui-tabs-panel {
+  display: block;
+  border-width: 0;
+  padding: 3em 1.4em;
+  background: none;
+  display: flex;
+}
+
+#tabs li a:hover {
+  color: #dc0b5f;
+  font-style: italic;
+  transform: scale(1.25);
+}
+
+h1 {
+  font-size: 50px;
+  color: #5b387f;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.btn {
+  background: #2b5ec4;
+  border: 1px solid #2b5ec4;
+  color: #fff;
+  background: #2b5ec4;
+  background: -moz-linear-gradient(-45deg, #2b5ec4 0%, #5c17b6 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #2b5ec4), color-stop(100%, #5c17b6));
+  background: -webkit-linear-gradient(-45deg, #2b5ec4 0%, #5c17b6 100%);
+  background: -o-linear-gradient(-45deg, #2b5ec4 0%, #5c17b6 100%);
+  background: -ms-linear-gradient(-45deg, #2b5ec4 0%, #5c17b6 100%);
+  background: -webkit-linear-gradient(315deg, #2b5ec4 0%, #5c17b6 100%);
+  background: -o-linear-gradient(315deg, #2b5ec4 0%, #5c17b6 100%);
+  background: linear-gradient(135deg, #2b5ec4 0%, #5c17b6 100%);
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  float: left;
+  cursor: pointer;
+}
+
+.ui-tabs .ui-tabs-nav {
+  margin: 0;
+  padding: 0.2em 0.2em 0;
+  min-width: 90px;
+  display: flex;
+  padding: 0px 24px;
+  flex: 1 0 auto;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0px;
+  border: none;
+  outline: none;
+  background: none;
+  text-align: center;
+  z-index: 1;
+  cursor: pointer;
+  white-space: nowrap;
+  appearance: none;
+}
+
+.ui-tabs .ui-tabs-nav li {
+  list-style: none;
+  float: left;
+  position: relative;
+  top: 0;
+  margin: 0px 0em 0 0;
+  border-bottom-width: 0;
+  padding: 0;
+  white-space: nowrap;
+  width: 33.33%;
+  text-align: center;
+  background: none;
+  color: gray;
+  border: none;
+  border-bottom: 3px solid gray;
+}
+
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  width: 93%;
+  padding: 0rem 0rem 1rem;
+  font-size: 25px;
+}
+
+.ui-tabs .ui-tabs-nav li {
+  list-style: none;
+  float: left;
+  position: relative;
+  top: 0;
+  margin: 0px 0em 0 0;
+  border-bottom-width: 0;
+  padding: 0;
+  white-space: nowrap;
+  width: 33%;
+  text-align: center;
+  background: none;
+  border: none;
+  border-bottom: 3px solid gray !important;
+  color: gray !important;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+  cursor: text;
+  color: gray;
+  font-weight: 600;
+}
+#tabs li a{
+  color:#384bc0 !important;
+}
+li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-active {
+  border-bottom: 3px solid #384bc0 !important;
+}
+
+.ui-widget.ui-widget-content {
+  border: 2px solid #c5c5c5 ;
+  border: none;
+  background: #fff0;
+}
+
+li.ui-tabs-tab.ui-corner-top.ui-state-default{
+  border-bottom: 3px solid #fff !important;
+  border: none;
+  color: #c5c5c5;
+}
+.flip-card {
+  background-color: transparent;
+  width: 80px;
+  height: 100px;
+  perspective: 1000px;
+  margin-right: 9px;
+  margin-bottom: 15px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  
+}
+
+.flip-card.flip .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card.unflip .flip-card-inner {
+  transform: rotateY(0deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+input#player_name {
+  display: block;
+  width: 243px;
+  padding: 0.375rem 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  height: 34px;
+  background: white;
+  color: gray;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: none;
+  border: 1px solid transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+label {
+  display: flex;
+  align-items: center !important;
+}
+
+select#num_cards {
+  display: block;
+  width: 243px;
+  padding: 0.375rem 0.75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  height: 48px;
+  background: #ffffff;
+  color: #000;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: none;
+  border: 1px solid transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+#instruction {
+  border: 1px solid whitesmoke;
+  background: #ffffff80;
+  padding: 25px;
+}
+
+#instruction li {
+  line-height: 1.7;
+}
+
+#player,
+#high_score,
+#correct {
+  height: 40px;
+  color: #000;
+  padding: 1rem;
+  font-weight: bolder;
+}
+
+.flip-card-front {
+  background-color: transparent;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flex {
+  display: flex;
+}

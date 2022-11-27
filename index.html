@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Memory Game</title>
+    <link type="text/css" rel="stylesheet" href="jquery-ui.min.css">
+    <link type="text/css" rel="stylesheet" href="memory.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="memory1.js"></script>
+    <script src="js/library_scores.js"></script>
+    <script src="js/library_cards.js"></script>
+    <script src="js/library_card.js"></script>
+    <script src="js/library_settings.js"></script>
+</head>
+
+<body>
+    <div class="game">
+        <form id="form_submit" onsubmit="store()">
+    <header>
+        <h1>Memory Game</h1>
+        <p id="new_game"><a href="index.html" class="btn">New Game</a></p>
+        <p id="player"> Player Name</p>
+        <p id="high_score">High Score: <span id="highScore"></span></p>
+        <p id="correct">Correct: <span id="Score"></span></p>
+        <div class="clear"></div>
+    </header>
+    <main>
+       
+            <div id="tabs">
+                
+                <ul>
+                    <li><a href="#tabs-1">Play Game</a></li>
+                    <li><a href="#tabs-2">View Rules</a></li>
+                    <li><a href="#tabs-3">Settings</a></li>
+                </ul>
+                
+                <div id="tabs-1" style="height: 100%;">
+                    <div id="cards">
+                        
+                    </div>
+                </div>
+                <div id="tabs-2">
+                    <div id="instruction">
+                    <fieldset>
+                        <legend>How to play the Memory game</legend>
+                        <ul>
+                            <li>The cards are placed face down. Each card has a matching card.</li>
+                            <li>For each turn, the player select two cards.</li>
+                            <li>If the cards match, they are removed from the board.</li>
+                            <li>If the cards don't match, they are turned face down again.</li>
+                            <li>At the end of the game, the player receives a score based on the number
+                                of correct selections that were made.</li>
+                        </ul>
+                    </fieldset>
+                </div>
+                </div>
+                
+                <div id="tabs-3">
+                   
+                    <label for='player_name'>Player name:</label>
+                    <input type='text' id='player_name'><span id="error" style="color: red;"></span><br>
+
+                    <label for='num_cards'>Number of cards:</label>
+                    <select id='num_cards'>
+                        <option>48</option>
+                        <option>40</option>
+                        <option>32</option>
+                        <option>24</option>
+                        <option>16</option>
+                        <option>8</option>
+                    </select><br>
+
+                    <input type='submit' id='save_settings' class="btn" value='Save Settings'>
+                </form>
+                </div>
+            </div>
+        
+    </div>
+    </main>
+</body>
+
+</html>
